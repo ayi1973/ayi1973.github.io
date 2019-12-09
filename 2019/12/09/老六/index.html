@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>孤独患者的临床记录</title>
+    <title>老六 · 孤独患者的临床记录</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -77,6 +77,8 @@
 
     <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
@@ -201,14 +203,23 @@
 </head>
 
     
-        <body class="home-body">
+        <body class="post-body">
     
     
-<header class="header index-header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >Ayi&#39;s Blog</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">老六</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>Ayi's Blog</a>
 </header>
@@ -227,17 +238,17 @@ height:50vh;
     <!-- 主页  -->
     
     
-    <!-- 文章页  -->
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/intro-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/newpost-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Ayi's Blog
-            <!-- 文章页  -->
+            老六
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
@@ -245,12 +256,49 @@ height:50vh;
             <!-- 主页副标题  -->
             
             
-                あの時、あの場所、私はそう思っていました。
-            
-            <!-- 文章页  -->
+            <!-- 404 -->
             
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "纷杂的思绪">纷杂的思绪</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">3.2k</span>阅读时长: <span class="post-count reading-time">10 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/12/09</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -351,316 +399,99 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/12/09/老六/" >
-            
-                <span>老六</span>
-        </a>
-        <div class="abstract-content">
-            我想到老六，那个十几二十岁的男孩子的青春。
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/12/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "纷杂的思绪">纷杂的思绪</a>
-    
-</div>
-            
-        </div>
+            <main class="main post-page">
+    <article class="article-entry">
+        <font face="微软雅黑" size="3">
+
+<p>我还记得大学那会儿，CS1.6正火，身边除了玩Dota的哥们基本上都是在玩CS，我和对床的老六就是一对CS兄弟。一天晚上对床老六回寝，正好撞见我在笔记本上打CS，说巧了，自己刚在网吧打了几个小时才回寝，我俩便像是一见如故一样聊起来，那夜好像有说不完的话，寝室熄了灯之后我俩就跑到天台上聊，两个人都一件背心一条裤衩一双凉拖鞋，晚上给冻着了也丝毫没有感觉，就觉得似乎是找到了归宿一样的爽快。</p>
+<p>“老六你也整个手提电脑呗”我后来跟老六说，说话声音都给冻得有点发颤。</p>
+<p>“整啥啊？真整不了这个”老六连忙摇头“难不成让我不吃不喝俩月？”</p>
+<p>我就再没劝他，这东西不好强求，毕竟我还是怕要真为了那点钱，老六指不定能做出什么事来。</p>
+<p>老六人不高，头发还相当长，有时候去网吧多了忘了刮胡子，胡子拉碴再加上一头几天不洗的鸟窝，网吧里的人都离他远远的，还以为是叫花子进网吧蹭空调。他特喜欢那件红色的李宁运动夹克衫，他说那是成人那天他爸给买的，穿着这衣服干啥都倍儿有劲。</p>
+<p>“哎，你为啥叫老六啊”我问他“这名儿放CS里头可不是什么好名儿。”</p>
+<p>“去去去去，你懂啥”他嬉皮笑脸的把我推开，两只手开始比划起来“那打得贼，才叫老六，专业点儿，那就是顶级自由人，懂啥呀就在这说道。”</p>
+<p>“哎哟可把你给能的，还顶级自由人了。”</p>
+<p>“你，来网吧，我等你。以后可别想拜师怪我不收徒弟。”</p>
+<p>后来一个人在寝室打游戏觉得没劲，我就跟老六去网吧约战。</p>
+<p>小石也支支吾吾说要跟着。“我长这么大还…没玩过电脑游戏”他显得颇有些不好意思“我想跟你们一起，去网吧看看。”老六听完一把拉住小石，手往他肩膀上一搭“走！兄弟带你看看真家伙。”小石顿时嘴角上扬，露出一阵阵喜悦。</p>
+<p>一开始小石站在我俩后面看，不时问几个问题，有时我俩娱乐局里还乐意跟小石解释一下个中问题，打到一些相当焦灼的匹配时，老六就开始觉得小石多余，他打输了还骂骂咧咧两句，小石就不再问问题了，他默默去找老板开了机，坐在我右边开始自己摸索起来。</p>
+<p>可小石跟我们不同。</p>
+<p>小石是内蒙来的。开学那天哥几个第一次在寝室见面时，小石一个人背着几个恨不得比人还大的大包，气呼呼地顶开寝室大门，两个脸蛋红彤彤的鼓胀着，不知道是给累的还是天生如此。给大家打过招呼之后，小石给每个人都发了一袋牛肉干，吸油的牛皮纸包装上印着绿色的“成吉思汗军粮”几个大字。大家都觉得小石从内蒙那么远的地方过来上学很新奇，而且肯定是个热情爽快人，没聊几句便马上熟络起来。小石家里对他要求很严，对他来说不读书就没有什么别的出路，只能回家放羊。因为挂科去辅导员那里喝过一次茶之后，就很少再去网吧跟我们一起厮混。</p>
+<p>小石不来网吧后，老六开始变了。</p>
+<p>寝室里渐渐地看不到老六的身影了，打电话一问准在网吧里泡着。有时候甚至电话也不接，就只能去网吧找他说事儿，完事儿之后就寻思来都来了，玩一会儿再走呗。跟老六往那儿一坐就是半天。</p>
+<p>那会儿我大概每周要在网吧里泡上20多个小时，老六估摸着更多。半夜打匹配排不到人了，我们就去外服跟洋人打，一般美国人和欧洲人经常喜欢在语音频道里骂中国人，一般骂英语就那几个词儿我们还听得懂两句，有一些欧洲鸟语压根就不知道在说啥，但是老六就觉得人在骂他，说他们看到你中国ID就骂你。</p>
+<p>我们一开始还骂回去，换着花样骂，中国语言文化博大精深，骂人的词儿能一周每天换着用不重样。后来我就觉得倦了，没啥意思，注意力都放在游戏上。但老六不一样，他这人硬，不服人骂他，我有时候劝他说别骂他们这些菜鸟了，打又打不过还不是只能骂两句出出气，老六说不能便宜他们了，这帮白皮猪就是看不起人，你把他们虐了还要嘴硬说你开挂。</p>
+<p>劝不住他，结果就是半夜网吧里都迷迷糊糊睡了的时候，老六的声音格外刺耳，骂的一些词也越来越不堪入耳，但随之而来的是老六越来越高的段位，他变强了，开始拥有一些超出我理解的操作和意识。但网吧老板也忍不了老六，让他去包间，一个人想怎么骂怎么骂，别每天老在这倒垃圾，跟耗子似的一到半夜就出来搞事。</p>
+<p>“那你得给我算外面一样的价格”老六笑嘻嘻地看着老板，双手捅在李宁的运动夹克衫口袋里，不停耸着肩膀“老常客了，老板…你看着办吧”<br>老板尽管一脸嫌弃，但老六在这个网吧算是小有名气，不俗的实力还不时吸引一些人来看他打游戏，也就没要求他太多，觉得留下他对生意是好事。</p>
+<p>渐渐地，老六的包间里的人开始多了起来，有时我在外面打累了，便走到老六包间里去看看他，结果门一开都几乎看不到老六人在哪儿。几平米的小房间里，老六坐在舒服的电竞椅上，戴着大耳机，键盘快斜到胸口，右手跟挂档似的大范围甩动着鼠标，而他身后则快围满了一圈人，小孩子大学生甚至看上去像中年人的都有，随着他的操作和屏幕右上角不断显示出的击杀提示发出一阵阵的惊呼，仔细听还能在里面听到老六标志性的骂声。在凌晨一点的网吧包间里，这样的场景几乎天天上演。</p>
+<p>老六成了附近的电竞名人。但同样无可置疑的还有他惨不忍睹的成绩单，基本上快挂完了。辅导员也见了，教务处也见了，通知还是我给老六带去的，听人训的时候老六没有那么多戾气，平时能骂个不停的嘴皮子一句话也说不出来，就那么望着地板的某个角落，不时点头或是摇头，训完上网睡觉逃课依然照常。</p>
+<p>我没有劝老六，并非是我不负责任不劝他该读的书要读，只是我知道自己劝不动他。但对于我自己，不是什么辅导员或者教务处老师，而是我女朋友，把我给说动了，我开始减少去网吧的频率，尽管游戏不能放，但起码没怎么挂科。老六的包间我时常去看看，帮他带一碗鸭血粉丝什么的，老六说他讨厌鸭肝，吃起来一股腥味，粉丝还一定要用薯粉，这些我都一直记得。我像小石一样站在老六身后，看着他眼花缭乱的操作，听着仍旧不时发出的几句怒骂，消磨着夜晚的时光。</p>
+<p>“我加了战队”那天老六在食堂找上我，他一下子出现，靠着我坐下，用肩膀轻轻撞击我“嘿…有兴趣来看看吗？”</p>
+<p>“卧槽你打出来了！兄弟”我惊异的看着他，并没有想到老六的水平已经如此之高，竟会有战队看上他。</p>
+<p>“明天晚上11点打比赛，老地方。”老六嘬掉最后一口烟，烟头滚落在地上“你来，我等你。”</p>
+<p>第二天晚上11点，我带着小石如约而至。</p>
+<p>网吧门口的巨幅海报上龙飞凤舞的写着“CS1.6高校联赛线下赛”，而网吧里已经挤满了前来观战的人。我挤着人群往里走，但是人群拥挤到实在是无法再前行。我望着比赛区里全副武装正在进入服务器热身的老六呼喊他，他回头看到我，笑着做了一个斩首的动作，旋即人群里便有人喊着老六的ID为他加油，我的声音淹没其中。</p>
+<p>图一打完休息时间时，老六跟我说饿了，注意力不集中。</p>
+<p>“现在就跟隔壁鸭血粉丝说一声，快得很”我对老六说。</p>
+<p>“没时间”老六说“图一状态不好，帮兄弟整点槟榔，图二图三一口气给他拿下了。”<br>跟我说话时，他两眼直勾勾的看着别处，就好像被训话时的那种眼神。我连忙喊小石去前台买槟榔，一边拍打老刘肩膀一边给他鼓劲。</p>
+<p>“得给他们点真东西看看。妈的。”直到图二开始老六仍嘟囔着那几句话。</p>
+<p>他嚼着槟榔骂着娘，开始了后面的比赛。</p>
+<p>图二尽管双方相当焦灼，但凭借关键时刻老六的一波顶级残局操作翻盘，队伍士气大增。进入图三后一路高歌猛进，比分被逐渐拉开。</p>
+<p>这个时候奇怪的事情发生了。对面喊了一个技术暂停，说是设备有问题掉出了服务器，一个工作人员便走过去，开始给选手调试电脑。技术暂停不允许任何交流，大家都沉默不语，但老六脸上自信的笑容和肢体语言的互动仍然让人群感到亢奋。</p>
+<p>然后他们便开始输，一盘接着一盘，人在烟雾弹里被混死，在铁皮后被穿杀，对面就好像是开了天眼一样打出一个个不可思议的操作。老六脸上的笑容早就消失了，取而代之的是僵硬和带着丝丝愤怒的疑惑，而那愤怒正逐渐积攒，以老六的性格绝不可能不爆发。</p>
+<p>在输掉了一个二打一的B区回防之后，原本大比分领先的老六一方被追平。</p>
+<p>老六怒了。</p>
+<p>他摘掉耳机砸向显示屏，鼠标也摔倒地上，双手一拍键盘，怒吼着：“他妈的你们这帮崽种打不过就开是吧？！”紧接着，人群也跟着混乱起来，一阵阵的高喊着对面开挂要求检查电脑。</p>
+<p>无奈之下，那个工作人员只好再次去帮对面的选手“调试设备”，过了大概十多分钟，报告并为发现任何外挂，老六因为扰乱比赛秩序破坏设备被替补队员换下，比赛才重新继续。</p>
+<p>这次对面就好像蔫韭菜一样一下子被打的毫无还手之力，老六一边最终以2:1的比分赢下了比赛。</p>
+<p>我不记得那天晚上喝了多少酒，喊了多少次老六牛逼。</p>
+<p>只记得我笑到流眼泪，问他：“你真不怕事儿大啊，就那么砸，那么骂他们…”</p>
+<p>老六把酒瓶子往桌子上一砸，“我得赢，必须…赢，兄弟，你明白吗？不赢就什么都不是。”</p>
+<p>后来，老六离开了我们寝室，退学跳槽到上海的俱乐部去了。</p>
+<p>那一年WEG大师赛WNV在杭州拿世界冠军的时候，我印象很深的是，整片宿舍区都沸腾了，十几二十岁的男孩子们在寝室里看着屏幕上的WNV手舞足蹈发出欢呼和怒吼的时候，我也是其中一员。只不过那个时候，我可能比其他人想得更多一点。</p>
+<p>我想到老六，那个十几二十岁的男孩子的青春。</p>
+</font>
     </article>
+    <!-- license  -->
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/20/关于音游，我想谈些什么/" >
-            
-                <span>关于音游，我想谈些什么</span>
-        </a>
-        <div class="abstract-content">
-            音游在国内仍是小众圈子，小众圈子的爱好者心态永远都是纠结的。
+        <div class="license-wrapper">
+            <p>原文作者：<a href="http://yoursite.com">ayi</a>
+            <p>原文链接：<a href="http://yoursite.com/2019/12/09/老六/">http://yoursite.com/2019/12/09/老六/</a>
+            <p>发表日期：<a href="http://yoursite.com/2019/12/09/老六/">December 9th 2019, 11:38:49 pm</a>
+            <p>更新日期：<a href="http://yoursite.com/2019/12/09/老六/">December 9th 2019, 11:43:49 pm</a>
+            <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/20</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "随笔">随笔</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/19/DD/" >
-            
-                <span>DD是怎样炼成的</span>
-        </a>
-        <div class="abstract-content">
-            这就是作为粉丝的我啊。
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/19</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "随笔">随笔</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/22/隧道(下)/" >
-            
-                <span>隧道（下）</span>
-        </a>
-        <div class="abstract-content">
-            我一个人站在路当中，不停地思考着，我该去往何处。
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/22</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "纷杂的思绪">纷杂的思绪</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/18/秋的随想/" >
-            
-                <span>秋的随想</span>
-        </a>
-        <div class="abstract-content">
-            江城由夏末入秋遽然，但一日前后耳。
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/18</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "随笔">随笔</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/14/隧道(上)/" >
-            
-                <span>隧道（上）</span>
-        </a>
-        <div class="abstract-content">
-            我现在是在这里开车穿过这些隧道，抑或是在穿过别的某处的隧道，山也并非此处的山，而隧道也不知是通向何处的隧道。
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/14</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "纷杂的思绪">纷杂的思绪</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/11/写在前面/" >
-            
-                <span>写在前面</span>
-        </a>
-        <div class="abstract-content">
-            在那个时候，那个地方，我如此思考着。
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/11</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "随笔">随笔</a>
-    
-</div>
-            
-        </div>
-    </article>
     
     <!-- paginator  -->
-    
-</main>
-            <!-- profile -->
+    <ul class="post-paginator">
+        <li class="next">
             
-            <div class="profile">
-    <img class="profile-avatar" alt="avatar" src= /avatar/aida.jpg >
-    <div class="profile-name">ayi</div>
-    
-    <div class="profile-signature">
-        失恋少女日々進化中
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
+        </li>
+        <li class="previous">
             
-                <a href="mailto:171256701@qq.com" class="iconfont-archer email" title=email ></a>
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2019/10/20/关于音游，我想谈些什么/" title= "关于音游，我想谈些什么">
+                    <div class="prevTitle">关于音游，我想谈些什么</div>
+                </a>
             
-        
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-        
-            
-                <a href="//github.com/ayi1973" class="iconfont-archer github" target="_blank" title=github></a>
-            
-        
     
-        
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
     
-        
-            
-                <span class="iconfont-archer qq" title=qq>
-                  
-                  <img class="profile-qr" src="/assets/QQ qr-code.png" />
-                </span>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-            
-                <a href="https://space.bilibili.com/17471600" class="iconfont-archer bilibili" target="_blank" title=bilibili></a>
-            
-        
-    
-        
-    
-        
-            
-                <a href="https://steamcommunity.com/profiles/76561198377279288/" class="iconfont-archer steam" target="_blank" title=steam></a>
-            
-        
-    
-        
-    
-        
     
 
-    </div>
-    
-    
-        <div class="friends">
-            <div>FRIENDS</div>
-            
-                
-                    <span>
-                        <a href= /http://www.zjuriko.ml/ target="_black">zjuriko</a>
-                    </span>
-                
-            
-                
-            
-                
-            
-        </div>
-    
-    
-        <div class="about-me">
-            <a href = "/about" >ABOUT ME</a>
-        </div>
-    
-</div>
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
             
         </div>
         <footer class="footer footer-unloaded">
@@ -751,6 +582,24 @@ height:50vh;
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -958,6 +807,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
